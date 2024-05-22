@@ -32,9 +32,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buttonLogin = new System.Windows.Forms.Button();
+            this.passField = new System.Windows.Forms.TextBox();
+            this.loginField = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Clik_Pass = new System.Windows.Forms.Label();
@@ -56,9 +56,9 @@
             this.обои_authorization.Controls.Add(this.label1);
             this.обои_authorization.Controls.Add(this.pictureBox4);
             this.обои_authorization.Controls.Add(this.pictureBox3);
-            this.обои_authorization.Controls.Add(this.button1);
-            this.обои_authorization.Controls.Add(this.textBox2);
-            this.обои_authorization.Controls.Add(this.textBox1);
+            this.обои_authorization.Controls.Add(this.buttonLogin);
+            this.обои_authorization.Controls.Add(this.passField);
+            this.обои_authorization.Controls.Add(this.loginField);
             this.обои_authorization.Controls.Add(this.pictureBox2);
             this.обои_authorization.Controls.Add(this.pictureBox1);
             this.обои_authorization.Controls.Add(this.Clik_Pass);
@@ -115,48 +115,50 @@
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
             // 
-            // button1
+            // buttonLogin
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(182)))), ((int)(((byte)(79)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(51)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(434, 340);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(264, 39);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Войти ";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(182)))), ((int)(((byte)(79)))));
+            this.buttonLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
+            this.buttonLogin.FlatAppearance.BorderSize = 0;
+            this.buttonLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(51)))));
+            this.buttonLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
+            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLogin.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.buttonLogin.Location = new System.Drawing.Point(434, 340);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(264, 39);
+            this.buttonLogin.TabIndex = 8;
+            this.buttonLogin.Text = "Войти ";
+            this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // passField
             // 
-            this.textBox2.BackColor = System.Drawing.Color.White;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(470, 266);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(228, 29);
-            this.textBox2.TabIndex = 7;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.passField.BackColor = System.Drawing.SystemColors.Window;
+            this.passField.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.passField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.passField.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passField.Location = new System.Drawing.Point(470, 266);
+            this.passField.Name = "passField";
+            this.passField.PasswordChar = '*';
+            this.passField.Size = new System.Drawing.Size(228, 29);
+            this.passField.TabIndex = 7;
+            this.passField.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.passField.UseSystemPasswordChar = true;
             // 
-            // textBox1
+            // loginField
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(470, 205);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(228, 29);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.loginField.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.loginField.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.loginField.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginField.Location = new System.Drawing.Point(470, 205);
+            this.loginField.Name = "loginField";
+            this.loginField.Size = new System.Drawing.Size(228, 29);
+            this.loginField.TabIndex = 6;
+            this.loginField.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.loginField.TextChanged += new System.EventHandler(this.loginField_TextChanged);
             // 
             // pictureBox2
             // 
@@ -274,9 +276,9 @@
         private System.Windows.Forms.Label Clik_Pass;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox loginField;
+        private System.Windows.Forms.TextBox passField;
+        private System.Windows.Forms.Button buttonLogin;
         protected System.Windows.Forms.Panel обои_authorization;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;

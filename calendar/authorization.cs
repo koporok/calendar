@@ -8,6 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using Npgsql;
+using NpgsqlTypes;
+using static calendar.ConnectPostgres;
+
 namespace calendar
 {
     public partial class authorization : Form
@@ -73,6 +77,32 @@ namespace calendar
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string loginUser = loginField.Text;
+            string passUser = passField.Text;
+
+            ConnectPostgres db = new ConnectPostgres();
+
+            DataTable dt = new DataTable();
+
+            NpgsqlDataAdapter adapter = new NpgsqlDataAdapter();
+
+            NpgsqlCommand command = new NpgsqlCommand("SELECT * FROM users WHERE username = @uL AND password = @uP");
+            command.Parameters.Add(new NpgsqlParameter("@uL", NpgsqlDbType.Varchar)).Value = loginUser;
+            command.Parameters.Add(new NpgsqlParameter("@uP", NpgsqlDbType.Varchar)).Value = passUser;
+            command.Connection = (NpgsqlConnection)db.Conn;
+
+
+            adapter.SelectCommand = command;
+            //adapter.Fill(dt);
+
+            if(dt.Rows.Count > 0)
+            {
+                MessageBox.Show(loginUser +", добро пожаловать в ваш личный календарь!");
+            }
+            else
+            {
+                MessageBox.Show("Введён неверный логин или пароль");
+            }
 
         }
 
@@ -109,6 +139,11 @@ namespace calendar
         }
 
         private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginField_TextChanged(object sender, EventArgs e)
         {
 
         }
