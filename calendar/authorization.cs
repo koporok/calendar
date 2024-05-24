@@ -19,6 +19,12 @@ namespace calendar
         public authorization()
         {
             InitializeComponent();
+
+            loginField.Text = "Введите имя";
+            loginField.ForeColor = Color.Green;
+
+            passField.Text = "Введите пароль";
+            passField.ForeColor = Color.Green;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -29,30 +35,7 @@ namespace calendar
 
         private void об_authorization(object sender, PaintEventArgs e)
         {
-            // Предполагается, что у вас есть пути к изображениям для утра, дня, вечера и ночи.
-            string morningImagePath = "images.обои_вечер.jpg";
-            string afternoonImagePath = "images.обои_день.jpg";
-            string eveningImagePath = "images.обои_вечер.jpg";
-            string nightImagePath = "images.обои_ночь.jpg";
-
-            DateTime currentTime = DateTime.Now;
-
-            if (currentTime.Hour >= 5 && currentTime.Hour < 12)  // Утро (с 5:00 до 11:59)
-            {
-                обои_authorization.BackgroundImage = Image.FromFile(morningImagePath);
-            }
-            else if (currentTime.Hour >= 12 && currentTime.Hour < 17)  // День (с 12:00 до 16:59)
-            {
-                обои_authorization.BackgroundImage = Image.FromFile(afternoonImagePath);
-            }
-            else if (currentTime.Hour >= 17 && currentTime.Hour < 20)  // Вечер (с 17:00 до 19:59)
-            {
-                обои_authorization.BackgroundImage = Image.FromFile(eveningImagePath);
-            }
-            else  // Ночь (с 20:00 до 4:59)
-            {
-                обои_authorization.BackgroundImage = Image.FromFile(nightImagePath);
-            }
+         
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -146,6 +129,48 @@ namespace calendar
         private void loginField_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void authorization_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginField_Enter(object sender, EventArgs e)
+        {
+            if (loginField.Text == "Введите имя")
+            {
+                loginField.Text = "";
+                loginField.ForeColor = Color.White;
+            }
+        }
+
+        private void loginField_Leave(object sender, EventArgs e)
+        {
+
+            if (loginField.Text == "")
+            {
+                loginField.Text = "Введите имя";
+                loginField.ForeColor = Color.Green;
+            }
+        }
+
+        private void passField_Enter(object sender, EventArgs e)
+        {
+            if (passField.Text == "Введите пароль")
+            {
+                passField.Text = "";
+                passField.ForeColor = Color.White;
+            }
+        }
+
+        private void passField_Leave(object sender, EventArgs e)
+        {
+            if (passField.Text == "")
+            {
+                passField.Text = "Введите пароль";
+                passField.ForeColor = Color.Green;
+            }
         }
     }
 }
