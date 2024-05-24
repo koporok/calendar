@@ -50,7 +50,7 @@ namespace calendar
 
         private void label3_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(" В разработке ");
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -113,12 +113,19 @@ namespace calendar
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show(" В разработке ");
         }
 
         private void Clik_Registration_Click(object sender, EventArgs e)
         {
+            // Скрыть текущую форму (Form1)
+            this.Hide();
 
+            // Создать новый экземпляр формы Form2
+            registration form2 = new registration();
+
+            // Показать форму Form2
+            form2.Show();
         }
 
         private void label1_Click_1(object sender, EventArgs e)
@@ -171,6 +178,11 @@ namespace calendar
                 passField.Text = "Введите пароль";
                 passField.ForeColor = Color.Green;
             }
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(" В разработке ");
         }
     }
 }
