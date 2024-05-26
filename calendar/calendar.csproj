@@ -101,6 +101,12 @@
     <Compile Include="authorization.Designer.cs">
       <DependentUpon>authorization.cs</DependentUpon>
     </Compile>
+    <Compile Include="calendar_window.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calendar_window.Designer.cs">
+      <DependentUpon>calendar_window.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConnectPostgres.cs" />
     <Compile Include="create_group.cs">
       <SubType>Form</SubType>

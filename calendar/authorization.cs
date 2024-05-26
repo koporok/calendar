@@ -88,7 +88,7 @@ namespace calendar
                     this.Hide();
 
                     // Создать новый экземпляр формы Form2
-                    main form2 = new main(loginField);
+                    main form2 = new main();
                     // Показать форму Form2
                     form2.Show();
                     MessageBox.Show($"{loginField.Text}, добро пожаловать в ваш личный календарь!");

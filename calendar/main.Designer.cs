@@ -163,6 +163,7 @@
             this.button2.TabIndex = 17;
             this.button2.Text = "Войти ";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -207,6 +208,8 @@
             this.textBox2.TabIndex = 14;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
+            this.textBox2.Leave += new System.EventHandler(this.textBox2_Leave);
             // 
             // pictureBox1
             // 
