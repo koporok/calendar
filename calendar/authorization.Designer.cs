@@ -143,11 +143,11 @@
             this.passField.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passField.Location = new System.Drawing.Point(470, 266);
             this.passField.Name = "passField";
-            this.passField.PasswordChar = '*';
+            this.passField.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.passField.Size = new System.Drawing.Size(228, 29);
             this.passField.TabIndex = 7;
+            this.passField.TabStop = false;
             this.passField.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.passField.UseSystemPasswordChar = true;
             this.passField.Enter += new System.EventHandler(this.passField_Enter);
             this.passField.Leave += new System.EventHandler(this.passField_Leave);
             // 

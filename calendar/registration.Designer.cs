@@ -70,7 +70,7 @@
             this.обои_authorization.Controls.Add(this.Clik_Registration);
             this.обои_authorization.Controls.Add(this.label2);
             this.обои_authorization.Controls.Add(this.heading);
-            this.обои_authorization.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.обои_authorization.Cursor = System.Windows.Forms.Cursors.Default;
             this.обои_authorization.ForeColor = System.Drawing.Color.Transparent;
             this.обои_authorization.Location = new System.Drawing.Point(-10, -6);
             this.обои_authorization.Name = "обои_authorization";
@@ -245,6 +245,7 @@
             this.Clik_Registration.Size = new System.Drawing.Size(257, 23);
             this.Clik_Registration.TabIndex = 2;
             this.Clik_Registration.Text = "Перейти на окно авторизации";
+            this.Clik_Registration.Click += new System.EventHandler(this.Clik_Registration_Click);
             // 
             // label2
             // 

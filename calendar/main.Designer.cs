@@ -28,53 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.обои_authorization = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.buttonLogin = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.heading = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.обои_authorization = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.обои_authorization.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // обои_authorization
-            // 
-            this.обои_authorization.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.обои_authorization.BackgroundImage = global::calendar.Properties.Resources.обои_ночь;
-            this.обои_authorization.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.обои_authorization.Controls.Add(this.label4);
-            this.обои_authorization.Controls.Add(this.button2);
-            this.обои_authorization.Controls.Add(this.button1);
-            this.обои_authorization.Controls.Add(this.tabControl1);
-            this.обои_authorization.Controls.Add(this.textBox2);
-            this.обои_authorization.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.обои_authorization.ForeColor = System.Drawing.Color.Transparent;
-            this.обои_authorization.Location = new System.Drawing.Point(278, -4);
-            this.обои_authorization.Name = "обои_authorization";
-            this.обои_authorization.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.обои_authorization.Size = new System.Drawing.Size(808, 603);
-            this.обои_authorization.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(182)))), ((int)(((byte)(79)))));
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBox2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(87, 482);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox2.Size = new System.Drawing.Size(152, 29);
-            this.textBox2.TabIndex = 14;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label3
             // 
@@ -107,19 +75,6 @@
             this.buttonLogin.Text = "Выйти из учётной записи ";
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.pictureBox1.Image = global::calendar.Properties.Resources.user;
-            this.pictureBox1.InitialImage = global::calendar.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(94, 109);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(72, 67);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
@@ -161,33 +116,35 @@
             this.label1.TabIndex = 13;
             this.label1.Text = " @mail";
             // 
-            // tabControl1
+            // обои_authorization
             // 
-            this.tabControl1.Location = new System.Drawing.Point(87, 113);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(265, 318);
-            this.tabControl1.TabIndex = 16;
-            this.tabControl1.UseWaitCursor = true;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            this.обои_authorization.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.обои_authorization.BackgroundImage = global::calendar.Properties.Resources.обои_ночь;
+            this.обои_authorization.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.обои_authorization.Controls.Add(this.label4);
+            this.обои_authorization.Controls.Add(this.button2);
+            this.обои_authorization.Controls.Add(this.button1);
+            this.обои_authorization.Controls.Add(this.tabControl1);
+            this.обои_authorization.Controls.Add(this.textBox2);
+            this.обои_authorization.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.обои_authorization.ForeColor = System.Drawing.Color.Transparent;
+            this.обои_authorization.Location = new System.Drawing.Point(278, -4);
+            this.обои_authorization.Name = "обои_authorization";
+            this.обои_authorization.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.обои_authorization.Size = new System.Drawing.Size(808, 603);
+            this.обои_authorization.TabIndex = 2;
             // 
-            // button1
+            // label4
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(182)))), ((int)(((byte)(79)))));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(51)))));
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(87, 437);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(267, 39);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Создать группу ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Niagara Solid", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label4.Location = new System.Drawing.Point(171, 81);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(91, 29);
+            this.label4.TabIndex = 14;
+            this.label4.Text = "Группы ";
             // 
             // button2
             // 
@@ -207,17 +164,62 @@
             this.button2.Text = "Войти ";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // button1
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Niagara Solid", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(171, 81);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 29);
-            this.label4.TabIndex = 14;
-            this.label4.Text = "Группы ";
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(182)))), ((int)(((byte)(79)))));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(118)))), ((int)(((byte)(51)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(136)))), ((int)(((byte)(79)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(87, 437);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(267, 39);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "Создать группу ";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Location = new System.Drawing.Point(87, 113);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(265, 318);
+            this.tabControl1.TabIndex = 16;
+            this.tabControl1.UseWaitCursor = true;
+            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            // 
+            // textBox2
+            // 
+            this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(182)))), ((int)(((byte)(79)))));
+            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBox2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.ForeColor = System.Drawing.SystemColors.Window;
+            this.textBox2.Location = new System.Drawing.Point(87, 482);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.textBox2.Size = new System.Drawing.Size(152, 29);
+            this.textBox2.TabIndex = 14;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.pictureBox1.Image = global::calendar.Properties.Resources.user;
+            this.pictureBox1.InitialImage = global::calendar.Properties.Resources.user;
+            this.pictureBox1.Location = new System.Drawing.Point(94, 109);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(72, 67);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // main
             // 

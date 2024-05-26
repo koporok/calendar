@@ -16,9 +16,12 @@ namespace calendar
 {
     public partial class authorization : Form
     {
+        public string LoginName;
+
         public authorization()
         {
             InitializeComponent();
+
 
             loginField.Text = "Введите имя";
             loginField.ForeColor = Color.Green;
@@ -60,34 +63,48 @@ namespace calendar
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string loginUser = loginField.Text;
-            string passUser = passField.Text;
-
-            ConnectPostgres db = new ConnectPostgres();
-
-            DataTable dt = new DataTable();
-
-            NpgsqlDataAdapter adapter = new NpgsqlDataAdapter();
-
-            NpgsqlCommand command = new NpgsqlCommand("SELECT * FROM users WHERE username = @uL AND password = @uP");
-            command.Parameters.Add(new NpgsqlParameter("@uL", NpgsqlDbType.Varchar)).Value = loginUser;
-            command.Parameters.Add(new NpgsqlParameter("@uP", NpgsqlDbType.Varchar)).Value = passUser;
-            command.Connection = (NpgsqlConnection)db.Conn;
-
-
-            adapter.SelectCommand = command;
-            //adapter.Fill(dt);
-
-            if(dt.Rows.Count > 0)
+            try
             {
-                MessageBox.Show(loginUser +", добро пожаловать в ваш личный календарь!");
-            }
-            else
-            {
-                MessageBox.Show("Введён неверный логин или пароль");
-            }
+                ConnectPostgres db = UtilsPostgres.notMain();
 
+                DataTable dt = new DataTable();
+
+                using (NpgsqlCommand command = new NpgsqlCommand("SELECT * FROM users WHERE username = @uL AND password = @uP", (NpgsqlConnection)db.Conn))
+                {
+                    command.Parameters.Add(new NpgsqlParameter("@uL", NpgsqlDbType.Varchar)).Value = loginField.Text;
+                    command.Parameters.Add(new NpgsqlParameter("@uP", NpgsqlDbType.Varchar)).Value = passField.Text;
+                    
+
+                    using (NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(command))
+                    {
+                        adapter.Fill(dt);
+                    }
+                    LoginName = loginField.Text;
+                }
+
+                if (dt.Rows.Count > 0)
+                {
+                    // Скрыть текущую форму (Form1)
+                    this.Hide();
+
+                    // Создать новый экземпляр формы Form2
+                    main form2 = new main(loginField);
+                    // Показать форму Form2
+                    form2.Show();
+                    MessageBox.Show($"{loginField.Text}, добро пожаловать в ваш личный календарь!");
+
+                }
+                else
+                {
+                    MessageBox.Show("Введён неверный логин или пароль");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Произошла ошибка: " + ex.Message);
+            }
         }
+
 
         private void label3_MouseEnter(object sender, EventArgs e)
         {
@@ -184,5 +201,7 @@ namespace calendar
         {
             MessageBox.Show(" В разработке ");
         }
+
     }
+
 }

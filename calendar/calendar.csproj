@@ -102,6 +102,12 @@
       <DependentUpon>authorization.cs</DependentUpon>
     </Compile>
     <Compile Include="ConnectPostgres.cs" />
+    <Compile Include="create_group.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="create_group.Designer.cs">
+      <DependentUpon>create_group.cs</DependentUpon>
+    </Compile>
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +124,9 @@
     </Compile>
     <EmbeddedResource Include="authorization.resx">
       <DependentUpon>authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="create_group.resx">
+      <DependentUpon>create_group.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>

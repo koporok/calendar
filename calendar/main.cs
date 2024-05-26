@@ -46,5 +46,14 @@ namespace calendar
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+
+            create_group form2 = new create_group();
+            form2.Show();
+            
+        }
     }
 }

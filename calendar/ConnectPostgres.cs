@@ -22,12 +22,11 @@ namespace calendar
             try
             {
                 conn.Open(); // Открытие соединения
-                MessageBox.Show("Успешное подключение к базе данных PostgreSQL!");
                 return conn;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка подключения к базе данных PostgreSQL: " + ex.Message);
+
                 return null;
             }
         }

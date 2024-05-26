@@ -41,6 +41,12 @@ namespace calendar
             cmd.Parameters.Add(new NpgsqlParameter("@password", NpgsqlDbType.Varchar)).Value = passField.Text;
             cmd.Connection = (NpgsqlConnection)db.Conn;
             cmd.ExecuteNonQuery();
+           
+            this.Hide();
+            authorization form2 = new authorization();
+            form2.Show();
+            MessageBox.Show("Регистрация прошла успешно!");
+
         }
 
         private void Clik_Pass_Click(object sender, EventArgs e)
@@ -105,6 +111,13 @@ namespace calendar
         private void registration_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void Clik_Registration_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            authorization form2 = new authorization();
+            form2.Show();
         }
     }
 }
