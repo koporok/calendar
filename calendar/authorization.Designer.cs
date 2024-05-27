@@ -65,7 +65,7 @@
             this.обои_authorization.Controls.Add(this.Clik_Registration);
             this.обои_authorization.Controls.Add(this.label2);
             this.обои_authorization.Controls.Add(this.heading);
-            this.обои_authorization.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.обои_authorization.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.обои_authorization.ForeColor = System.Drawing.Color.Transparent;
             this.обои_authorization.Location = new System.Drawing.Point(-8, -4);
             this.обои_authorization.Name = "обои_authorization";

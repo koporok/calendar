@@ -114,6 +114,12 @@
     <Compile Include="create_group.Designer.cs">
       <DependentUpon>create_group.cs</DependentUpon>
     </Compile>
+    <Compile Include="EventFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventFrom.Designer.cs">
+      <DependentUpon>EventFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,11 +134,29 @@
     <Compile Include="registration.Designer.cs">
       <DependentUpon>registration.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlBlank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBlank.Designer.cs">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="authorization.resx">
       <DependentUpon>authorization.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="calendar_window.resx">
+      <DependentUpon>calendar_window.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="create_group.resx">
       <DependentUpon>create_group.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventFrom.resx">
+      <DependentUpon>EventFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>
@@ -149,6 +173,12 @@
     </Compile>
     <EmbeddedResource Include="registration.resx">
       <DependentUpon>registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlBlank.resx">
+      <DependentUpon>UserControlBlank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
