@@ -14,6 +14,8 @@ namespace calendar
     public partial class calendar_window : Form
     {
         int month, year;
+
+        public static int static_month, static_year;
         public calendar_window()
         {
             InitializeComponent();
@@ -42,6 +44,10 @@ namespace calendar
 
             string monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBDATE.Text = monthname+ "    " +year;
+
+            static_month = month;
+            static_year = year;
+
 
             //ПОЗВОЛЯЕТ получить первый день месяца.
             DateTime startofthemonth = new DateTime(year, month, 1);
@@ -78,6 +84,8 @@ namespace calendar
             string monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBDATE.Text = monthname + "    " + year;
 
+            static_month = month;
+            static_year = year;
 
             DateTime startofthemonth = new DateTime(year, month, 1);
             int days = DateTime.DaysInMonth(year, month);
@@ -106,6 +114,8 @@ namespace calendar
             string monthname = DateTimeFormatInfo.CurrentInfo.GetMonthName(month);
             LBDATE.Text = monthname + "    " + year;
 
+            static_month = month;
+            static_year = year;
 
             DateTime startofthemonth = new DateTime(year, month, 1);
             int days = DateTime.DaysInMonth(year, month);
